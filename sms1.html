@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SMS Conversation Simulation</title>
+		<style>
+			/* Reset some default styles */
+			* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			}
+			/* Body styling */
+			body {
+			font-family: Arial, sans-serif;
+			background-color: #e5ddd5;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			}
+			/* Chat container */
+			.chat-container {
+			width: 90%;
+			max-width: 420px;
+			background-color: #ffffff;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			padding: 20px;
+			overflow-y: auto;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			display: flex;
+			flex-direction: column;
+			border-top: black solid 12px;
+			border-bottom: black solid 12px;
+			border-left: black solid 4px;
+			border-right: black solid 4px;
+			height: 95vh;
+			}
+			/* Message bubbles */
+			.message {
+			max-width: 70%;
+			margin-bottom: 15px;
+			padding: 10px 15px;
+			border-radius: 20px;
+			position: relative;
+			word-wrap: break-word;
+			display: flex;
+			flex-direction: column;
+			}
+			/* Received messages */
+			.message.received {
+			background-color: #f1f0f0;
+			align-self: flex-start;
+			border-bottom-left-radius: 0;
+			}
+			/* Sent messages */
+			.message.sent {
+			background-color: #dcf8c6;
+			align-self: flex-end;
+			border-bottom-right-radius: 0;
+			margin-left: auto;
+			}
+			/* System messages */
+			.message.system {
+			background-color: #d3d3d3;
+			align-self: center;
+			border-radius: 10px;
+			max-width: 80%;
+			padding: 8px 12px;
+			font-style: italic;
+			color: #555;
+			}
+			/* Timestamp styling */
+			.timestamp {
+			display: block;
+			font-size: 0.8em;
+			color: #888;
+			margin-top: 5px;
+			text-align: right;
+			}
+			/* Scrollbar styling (optional) */
+			.chat-container::-webkit-scrollbar {
+			width: 8px;
+			}
+			.chat-container::-webkit-scrollbar-track {
+			background: #f1f1f1;
+			border-radius: 4px;
+			}
+			.chat-container::-webkit-scrollbar-thumb {
+			background: #c1c1c1;
+			border-radius: 4px;
+			}
+			.chat-container::-webkit-scrollbar-thumb:hover {
+			background: #a8a8a8;
+			}
+			/* Responsive adjustments */
+			@media (max-width: 600px) {
+			.chat-container {
+			padding: 15px;
+			}
+			.message {
+			max-width: 80%;
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="chat-container">
+			<div class=" timestamp">
+				<p>Monday, 7th Oct.</p>
+			</div>
+			<div class="message received">
+				<p>
+					Hi there.
+				</p>
+				<br />
+				<p>
+					We're contacting you as you have been put forward as a potential candidate for the New Rule contest.
+				</p>
+				<br />
+				<p>
+					Are you familiar with the game?
+				</p>
+				<span class="timestamp">11:43 AM</span>
+			</div>
+			<div class="message sent">
+				<p>Sure, everyone on campus is talking about it. Is this a prank? How do I know you're not just messing with me?</p>
+				<span class="timestamp">11:47 AM</span>
+			</div>
+			<div class="message received">
+				<p>
+					Allow me to introduce myself. I'm Rex, I work for New Rule, and I'm assigned to guide you through an onboarding process to get you started with the game.
+				</p>
+				<br />
+				<p>
+					You are going to have to show a little trust but if I can convince you to sign up I get a bonus, and you get a sign on incentive.
+				</p>
+				<br />
+				<p>
+					You said you are familiar with the game, the college rumour mill might not be that reliable. Look I am willing to send you a $500 advance if you need convincing. We can transfer the funds via PayPal if that would be acceptable.
+				</p>
+ 				<span class="timestamp">13:12 PM</span>
+			</div>
+			<div class="message sent">
+				<p>Ok, sure if you want to send me money, I'll listen. What's the catch?</p>
+				<span class="timestamp">17:32 AM</span>
+			</div>
+			<div class=" timestamp">
+				<p>Tuesday, 8th Oct.</p>
+			</div>
+			<div class="message received">
+				<p>
+					I'll just need to confirm a few details, and then get you started on registering in our app.
+				</p>
+				<br />
+				<p>
+					Once you have downloaded the app, you can set up your account. Basically it's a clone of some social media sites, which will give you an interface to track your participation, the rewards and keep up with the audience members who subscribe to follow along with the contestants.
+				</p>
+				<br />
+				<p>
+					Email me with your PayPal account, your address details for the smart ring and I'll send you a link to our app. Once we have you all set up I'll transfer the $500 dollars to your PayPal. OK?
+					<br />
+					My email is <a href="mailto:rex.k@newrule.con">rex.k@newrule.con</a>
+				</p>
+ 				<span class="timestamp">10:12 AM</span>
+			</div>
+			<div class="message sent">
+				<p>Ok I've emailed you. I am still dubious, but if the money comes through then I'm in.</p>
+				<span class="timestamp">12:12 PM</span>
+			</div>
+			<div class="message sent">
+				<p>I have set up my account on the app.</p>
+				<span class="timestamp">14:13 PM</span>
+			</div>
+			<div class="message received">
+				<p>
+					Thanks Mika, now you've gone through the set up and synced the smart ring with the app, I can transfer the advance of $500 to your paypal. By the time you see this is should be in your account.
+				</p>
+ 				<span class="timestamp">16:12 PM</span>
+			</div>
+			<div class="message sent">
+				<p>Ok. that's crazy you're for real. This is legit I'm going to be playing New Rule.</p>
+				<span class="timestamp">16:52 PM</span>
+			</div>
+			<div class="message received">
+				<p>
+					Yep, you are our latest contestant. I checked your profile out. If you could upload a selfie for your profile pic, and maybe add some details I'll list you on the subscriber app as a contestant and you can get started with week one.
+				</p>
+				<br />
+				<p>
+					Good luck Mika, if you have any questions I can be reached through the app just send a message @Rex.
+				</p>
+ 				<span class="timestamp">17:34 PM</span>
+			</div>
+		</div>
+	</body>
+</html>

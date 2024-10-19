@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Rule - Augmented Reality Game</title>
+    <style>
+        /* CSS Variables for Color Scheme */
+        :root {
+            --light-cyan: #a0e7e5;
+            --orangy-pink: #ff9a8b;
+            --dark-blue: #1c4e80;
+            --white: #ffffff;
+            --light-gray: #f0f0f0;
+            --text-color: #333333;
+        }
+
+        /* Reset some default styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-gray);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: var(--dark-blue);
+            padding: 20px 0;
+            text-align: center;
+            color: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-bar h1 {
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Introduction Section */
+        .introduction {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+
+        .introduction h2 {
+            color: var(--dark-blue);
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .introduction p {
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        /* Table of Contents */
+        .table-of-contents {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .table-of-contents h2 {
+            color: var(--dark-blue);
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .table-of-contents ul {
+            list-style-type: none;
+        }
+
+        .table-of-contents li {
+            background-color: var(--light-cyan);
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .table-of-contents li:hover {
+            background-color: var(--orangy-pink);
+            cursor: pointer;
+            color: var(--white);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--dark-blue);
+            color: var(--white);
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9em;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .footer p {
+	        max-width: 80%;
+	        margin: 0 auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .introduction, .table-of-contents {
+                padding: 20px;
+            }
+
+            .top-bar h1 {
+                font-size: 1.5em;
+            }
+
+            .introduction h2, .table-of-contents h2 {
+                font-size: 1.5em;
+            }
+
+            .introduction p, .table-of-contents li {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar with Centered Title -->
+    <div class="top-bar">
+        <h1>New Rule</h1>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+
+        <!-- Introduction Section -->
+        <section class="introduction">
+            <h2>Welcome to "New Rule"</h2>
+            <p>
+                Dive into the immersive world of "New Rule," an augmented reality game where contestants play for grand cash prizes, and allow their privileges and freedoms to be controlled by the games rules
+            </p>
+        </section>
+
+        <!-- Table of Contents -->
+        <section class="table-of-contents">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="sms1.html">The Initial Invite</a></li>
+                <li><a href="app1.html">Day 1: Getting into the app</a></li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+            "New Rule" is a work of fiction. All characters and events portrayed are fictitious and intended for entertainment purposes only.
+        </p>
+    </footer>
+
+</body>
+</html>
